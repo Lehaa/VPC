@@ -1,1 +1,1 @@
-# VPC
+# Terraform code for creating VPC, subnets
