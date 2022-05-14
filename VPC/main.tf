@@ -26,6 +26,7 @@ resource "aws_subnet" "main_public" {
   tags = "${merge(
     "${var.common_tags}",
     tomap({
+        "Name" = "Public-1a"
         "Tier" = "Public"
         })
     )}"
@@ -43,6 +44,7 @@ resource "aws_subnet" "second_public" {
   tags = "${merge(
     "${var.common_tags}",
     tomap({
+        "Name" = "Public-1b"
         "Tier" = "Public"
         })
     )}"
@@ -59,6 +61,7 @@ resource "aws_subnet" "main_private" {
   tags = "${merge(
     "${var.common_tags}",
     tomap({
+        "Name" = "Private-1a"
         "Tier" = "Private"
         })
     )}"
@@ -75,6 +78,7 @@ resource "aws_subnet" "second_private" {
   tags = "${merge(
     "${var.common_tags}",
     tomap({
+        "Name" = "Private-1b"
         "Tier" = "Private"
         })
     )}"
